@@ -10,6 +10,10 @@ This is the code for the paper "Rethinking Bias-Variance Trade-off for Generaliz
 * numpy
 
 
+## How to train models on different datasets?
+There are 4 folders, ```cifar10```, ```cifar100```, ```mnist```, ```fmnist```, 
+
+
 ## Reference
 For technical details and full experimental results, please check [the paper](https://todo).
 ```
