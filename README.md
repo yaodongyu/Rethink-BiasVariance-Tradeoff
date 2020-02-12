@@ -109,7 +109,7 @@ The results (including bias and variance) will be save in ```'log_width{}.txt'.f
 
 
 ## Reference
-For technical details and full experimental results, please check [the paper](https://todo).
+For more experimental and technical details, please check [the paper](https://todo).
 ```
 @article{todo, 
 	author = {todo}, 
