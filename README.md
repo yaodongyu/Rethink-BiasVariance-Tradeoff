@@ -6,7 +6,7 @@ This is the code for the paper "Rethinking Bias-Variance Trade-off for Generaliz
     <img src="images/resnet34_rbv.png" width="600"\>
 </p>
 <p align="center">
-<b> Risk, bias, and variance for ResNet34 on CIFAR10 dataset (25,000 training samples). <b>
+Risk, bias, and variance for ResNet34 on CIFAR10 dataset (25,000 training samples).
 </p>
 
 ## Prerequisites
@@ -43,14 +43,14 @@ The log file includes the following,
     <img src="images/bv_noise.png" width="600"\>
 </p>
 <p align="center">
-<b>Bias and variance under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples. <b>
+Bias and variance under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples.
 </p>
 	
 <p align="center">
     <img src="images/error_noise.png" width="600"\>
 </p>
 <p align="center">
-<b>Training error and test error under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples. <b>
+Training error and test error under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples.
 </p>
 
 
