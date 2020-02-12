@@ -11,7 +11,7 @@ This is the code for the paper "Rethinking Bias-Variance Trade-off for Generaliz
 
 ## How to train models on different datasets (MSE loss & MSE bias-variance decomposition)?
 There are 4 folders, ```cifar10```, ```cifar100```, ```fmnist```, and ```mnist```. First ```cd``` into the directory. Then run
-```python
+```text
 python train.py --trial 2 --arch resnet34 --width 10 --num-epoch 500 --lr-decay --outdir part1
 ```
 ### Arguments:
@@ -33,7 +33,7 @@ The log file includes the following,
 
 ## How to train models on CIFAR10 datasets with label noise?
  First ```cd``` into the ```cifar10``` folder. Then run
-```python
+```text
 python train_labelnoise.py --trial 5 --arch resnet34 --width 10 --noise-size 1000
 ```
 ### Arguments:
@@ -44,7 +44,7 @@ The results (including bias and variance) will be save in ```'log_width{}.txt'.f
 
 ## How to train models on CIFAR10 datasets with cross-entropy loss (CE loss & generalized Bregman divergence bias-variance decomposition)?
  First ```cd``` into the ```cifar10``` folder. Then run
-```python
+```text
 python train_ce.py --trial 5 --arch resnet34 --width 10
 ```
 
@@ -53,7 +53,7 @@ The results (including bias and variance) will be save in ```'log_width{}.txt'.f
 
 The bias and variance save in ```'log_width{}.txt'.format(args.width)``` is the classical MSE bias variance decomposition. To compute the generalized Bregman divergence bias variance decomposition, need to run
 
-```python
+```text
 python evaluate_bv_ce.py --model-dir-list cifar10_resnet34_trial5_cepart1 cifar10_resnet34_trial5_cepart2 --outdir ce_bv_results --width 10
 ```
 
@@ -72,7 +72,7 @@ tar -xvf CIFAR-100-C.tar -C data/cifar/
 tar -xvf CIFAR-10-C.tar -C data/cifar/
 ```
 next, run
-```python
+```text
 python evaluate_bv_mse_ood.py --modeldir cifar10_resnet34_trial2_mse --outdir ood_bv_results --width 10
 ```
 ### Log file:
