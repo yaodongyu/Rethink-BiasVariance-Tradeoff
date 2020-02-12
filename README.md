@@ -61,6 +61,30 @@ python evaluate_bv_ce.py --model-dir-list cifar10_resnet34_trial5_cepart1 cifar1
 * ```model-dir-list```: specify the folders for evaluations. For example, here we will calculate the bias and variance based on the models (```width=10```) saved in ```cifar10_resnet34_trial5_cepart1``` and ```cifar10_resnet34_trial5_cepart2```. The total number of models is ```5 * 2 = 10```.
 * ```outdir```: the folder name for saving the computed results.
 
+
+## How to evaluate bias variance on CIFAR10-C (out-of-distribution) dataset (MSE divergence bias-variance decomposition)?
+First, ```cd``` into the ```cifar10``` folder, then download CIFAR-10-C dataset by
+```
+mkdir -p ./data/cifar
+curl -O https://zenodo.org/record/2535967/files/CIFAR-10-C.tar
+curl -O https://zenodo.org/record/3555552/files/CIFAR-100-C.tar
+tar -xvf CIFAR-100-C.tar -C data/cifar/
+tar -xvf CIFAR-10-C.tar -C data/cifar/
+```
+next, run
+```python
+python evaluate_bv_mse_ood.py --modeldir cifar10_resnet34_trial2_mse --outdir ood_bv_results --width 10
+```
+### Log file:
+The results (including bias and variance) will be save in ```'log_width{}.txt'.format(args.width)```, in the folder ```ood_bv_results```. 
+
+
+### Arguments:
+* ```modeldir```: specify the folder for evaluations.
+* ```outdir```: the folder name for saving the computed results.
+
+
+
 ## Reference
 For technical details and full experimental results, please check [the paper](https://todo).
 ```
