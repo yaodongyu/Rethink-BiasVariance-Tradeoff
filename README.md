@@ -12,7 +12,7 @@ This is the code for the paper "Rethinking Bias-Variance Trade-off for Generaliz
 ## How to train models on different datasets (MSE loss & MSE bias-variance decomposition)?
 There are 4 folders, ```cifar10```, ```cifar100```, ```fmnist```, and ```mnist```. First ```cd``` into the directory. Then run
 ```python
-python train.py - -trial 2 --arch resnet34 --width 10 --num-epoch 500 --lr-decay --outdir part1
+python train.py --trial 2 --arch resnet34 --width 10 --num-epoch 500 --lr-decay --outdir part1
 ```
 ### Arguments:
 * ```trial```: how many splits, i.e., if ```trial=2``` on ```cifar10```, then the trainig sample size is ```50000/2 = 25000```.
