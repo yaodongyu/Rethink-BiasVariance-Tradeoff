@@ -6,7 +6,7 @@ This is the code for the paper "Rethinking Bias-Variance Trade-off for Generaliz
     <img src="images/resnet34_rbv.png" width="600"\>
 </p>
 <p align="center">
-<b>Risk, bias, and variance for ResNet34 on CIFAR10 dataset (25,000 training samples).
+<b>Risk, bias, and variance for ResNet34 on CIFAR10 dataset (25,000 training samples).<b>
 </p>
 
 ## Prerequisites
