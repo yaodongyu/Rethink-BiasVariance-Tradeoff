@@ -59,13 +59,13 @@ CORRUPTIONS = [
 Y_ood_list = []
 for index_c in range(len(CORRUPTIONS)):
     if index_c == 0:
-        X_ood = np.load('./data/CIFAR-10-C/{}.npy'.format(CORRUPTIONS[index_c]))[:50000]
+        X_ood = np.load('./data/cifar/CIFAR-10-C/{}.npy'.format(CORRUPTIONS[index_c]))[:50000]
     else:
-        X_ood_idx = np.load('./data/CIFAR-10-C/{}.npy'.format(CORRUPTIONS[index_c]))[:50000]
+        X_ood_idx = np.load('./data/cifar/CIFAR-10-C/{}.npy'.format(CORRUPTIONS[index_c]))[:50000]
         X_ood = np.concatenate((X_ood, X_ood_idx), axis=0)
-    Y_ood = np.load('./data/CIFAR-10-C/labels.npy')[:50000]
+    Y_ood = np.load('./data/cifar/CIFAR-10-C/labels.npy')[:50000]
     for i in range(50000):
-        Y_ood_list.append(Y_ood[i])
+        Y_ood_list.append(Y_ood[i])        
 
 print('X (OOD) shape: ', X_ood.shape)
 print('Y (OOD) shape: ', len(Y_ood_list))
