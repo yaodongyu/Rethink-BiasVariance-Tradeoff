@@ -11,7 +11,26 @@ This is the code for the paper "Rethinking Bias-Variance Trade-off for Generaliz
 
 
 ## How to train models on different datasets?
-There are 4 folders, ```cifar10```, ```cifar100```, ```mnist```, ```fmnist```, 
+There are 4 folders, ```cifar10```, ```cifar100```, ```fmnist```, and ```mnist```. First ```cd``` into the directory, and run
+```python
+python train.py --trial 2 --arch resnet34 --width 10 --num-epoch 500 --lr-decay --outdir part1
+```
+### Arguments:
+* ```trial```: how many splits, i.e., if ```trial=2``` on ```cifar10```, then the trainig sample size is ```50000/2 = 25000```
+* ```arch```: network architecture
+* ```width```: width of the network
+* ```num-epoch```: how many epochs for training
+* ```lr-decay```: after how many epochs to decay the learning rate
+* ```outdir```: specify the name of the folder for saving logs and checkpoints
+
+### Log file:
+The results (including bias and variance) will be save in ```'log_width{}.txt'.format(args.width) ```, in the folder ```'{}_{}_trial{}_mse{}'.format(args.dataset, args.arch, args.trial, args.outdir)```. 
+
+The log file includes the following,
+
+| trial | train loss  | train acc | test loss | test acc | bias | variance |
+| --------------------- | ------------- | ------------| ------------ |--------------- |-------- | ------- | 
+
 
 
 ## Reference
