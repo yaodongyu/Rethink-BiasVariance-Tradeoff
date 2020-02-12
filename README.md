@@ -43,15 +43,16 @@ The log file includes the following,
     <img src="images/bv_noise.png" width="600"\>
 </p>
 <p align="center">
-<b>Bias and variance under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples.<b>
+<b>Bias and variance under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples. <b>
 </p>
 	
 <p align="center">
     <img src="images/error_noise.png" width="600"\>
 </p>
 <p align="center">
-<b>Training error and test error under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples.<b>
+<b>Training error and test error under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples. <b>
 </p>
+
 
  First ```cd``` into the ```cifar10``` folder. Then run
 ```text
