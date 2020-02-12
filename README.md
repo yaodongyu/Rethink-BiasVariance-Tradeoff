@@ -39,20 +39,6 @@ The log file includes the following,
 
 
 ## How to train models on CIFAR10 datasets with label noise?
-<p align="center">
-    <img src="images/bv_noise.png" width="600"\>
-</p>
-<p align="center">
-Bias and variance under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples.
-</p>
-	
-<p align="center">
-    <img src="images/error_noise.png" width="600"\>
-</p>
-<p align="center">
-Training error and test error under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples.
-</p>
-
 
  First ```cd``` into the ```cifar10``` folder. Then run
 ```text
@@ -83,6 +69,21 @@ python evaluate_bv_ce.py --model-dir-list cifar10_resnet34_trial5_cepart1 cifar1
 * ```model-dir-list```: specify the folders for evaluations. For example, here we will calculate the bias and variance based on the models (```width=10```) saved in ```cifar10_resnet34_trial5_cepart1``` and ```cifar10_resnet34_trial5_cepart2```. The total number of models is ```5 * 2 = 10```.
 * ```outdir```: the folder name for saving the computed results.
 
+
+### Figures:
+<p align="center">
+    <img src="images/bv_noise.png" width="600"\>
+</p>
+<p align="center">
+Bias and variance under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples.
+</p>
+	
+<p align="center">
+    <img src="images/error_noise.png" width="600"\>
+</p>
+<p align="center">
+Training error and test error under different label noise percentage. Increasing label noise leads to double-descent phenomenon. ResNet34 using MSE loss on CIFAR10 dataset with 10,000 training samples.
+</p>
 
 ## How to evaluate bias variance on CIFAR10-C (out-of-distribution) dataset (MSE divergence bias-variance decomposition)?
 First, ```cd``` into the ```cifar10``` folder, then download CIFAR-10-C dataset by
