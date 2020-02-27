@@ -1,6 +1,6 @@
 # Rethink-BiasVariance-Tradeoff
 
-This is the code for the paper "Rethinking Bias-Variance Trade-off for Generalization of Neural Networks".
+This is the code for the paper "[Rethinking Bias-Variance Trade-off for Generalization of Neural Networks](https://arxiv.org/abs/2002.11328)".
 
 <p align="center">
     <img src="images/resnet34_rbv.png" width="600"\>
