@@ -109,12 +109,12 @@ The results (including bias and variance) will be save in ```'log_width{}.txt'.f
 
 
 ## Reference
-For more experimental and technical details, please check [the paper](https://todo).
+For more experimental and technical details, please check [the paper](https://arxiv.org/abs/2002.11328).
 ```
 @article{todo, 
-	author = {todo}, 
+	author = {Zitong Yang, Yaodong Yu, Chong You, Jacob Steinhardt, Yi Ma}, 
 	title = {Rethinking Bias-Variance Trade-off for Generalization of Neural Networks}, 
-	journal = {todo},
+	journal = {arXiv preprint arXiv:2002.11328},
 	year = {2020}
 }
 ```
