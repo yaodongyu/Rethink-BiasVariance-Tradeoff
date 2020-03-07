@@ -73,7 +73,8 @@ def get_subsample_dataset_label_noise(trainset, subset, noise_size):
     trainsubset.data = [trainsubset.data[index] for index in subset]
     trainsubset.targets = [trainsubset.targets[index] for index in subset]
     ######## shuffle
-    shuffle_targets_subset = [copy.deepcopy(trainsubset.targets[idx]) for idx in range(train_size - noise_size, train_size)]    shuffle(shuffle_targets_subset)
+    shuffle_targets_subset = [copy.deepcopy(trainsubset.targets[idx]) for idx in range(train_size - noise_size, train_size)]    
+    shuffle(shuffle_targets_subset)
     for idx in range(train_size - noise_size, train_size):
         trainsubset.targets[idx] = shuffle_targets_subset[idx - train_size + noise_size]
     return trainsubset
