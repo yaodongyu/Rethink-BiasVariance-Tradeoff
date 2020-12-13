@@ -1,6 +1,6 @@
 # Rethink-BiasVariance-Tradeoff
 
-This is the code for the paper "[Rethinking Bias-Variance Trade-off for Generalization of Neural Networks](https://arxiv.org/abs/2002.11328)".
+This is the code for the [ICML'20 paper](https://arxiv.org/abs/2002.11328) "Rethinking Bias-Variance Trade-off for Generalization of Neural Networks".
 
 <p align="center">
     <img src="images/resnet34_rbv.png" width="600"\>
@@ -109,5 +109,13 @@ The results (including bias and variance) will be save in ```'log_width{}.txt'.f
 
 
 ## Reference
-For more experimental and technical details, please check [the paper](https://arxiv.org/abs/2002.11328).
+For more experimental and technical details, please check our [paper](https://arxiv.org/abs/2002.11328).
+```
+@inproceedings{yang2020rethinking,
+  author = {Zitong Yang and Yaodong Yu and Chong You and Jacob Steinhardt and Yi Ma},
+  booktitle = {International Conference on Machine Learning (ICML)},
+  title = {Rethinking bias-variance trade-off for generalization of neural networks},
+  year = {2020},
+}
+```
 
